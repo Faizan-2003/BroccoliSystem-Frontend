@@ -1,0 +1,9 @@
+variables:
+    API_TOKEN: NNtA3kPYwyxaK4twhKPRscv16W77dK9vw2Z3cWsbmTm47iYvrirRXW9mGrEw
+    APP_PATH: '\BroccoliSystem\src'
+
+deploy:
+    stage: deploy
+    image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
+    script:
+        - echo "App deployed successfully."
