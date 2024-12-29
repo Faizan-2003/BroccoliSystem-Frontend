@@ -14,17 +14,17 @@
             <div class="chart-container">
                 <img
                     v-if="currentChart === 'pie'"
-                    src="C:/Users/mf384/OneDrive/Desktop/pie.jpg"
+                    src="../../public/assets/img/pie.jpg"
                     alt="Pie Chart"
                 />
                 <img
                     v-if="currentChart === 'histogram'"
-                    src="C:\Users\mf384\OneDrive\Desktop\histogram.jpg"
+                    src="../../public/assets/img/histogram.jpg"
                     alt="Histogram"
                 />
                 <img
                     v-if="currentChart === 'heatmap'"
-                    src="https://www.esriuk.com/content/distributor-sites/esriuk-com/en-gb/geospatial-thinking/stories/agriculture/_jcr_content/par/grid_container_copy__513533980/gc-par/columnsystem/wpar/image.img.jpg/1630949173846.jpg"
+                    src="../../public/assets/img/heatmap.jpg"
                     alt="Heat Map"
                 />
             </div>

@@ -24,7 +24,7 @@
 
                 <div class="heatmap-container">
                     <img
-                        src="https://www.esri.fi/content/distributor-sites/esri-fi/fi-fi/ratkaisut/liiketoiminnan-tarpeet/vastuullisuus/esimerkit/maatalous/_jcr_content/par/grid_container_copy__513533980/gc-par/columnsystem/wpar/image.img.jpg/1630949173846.jpg"
+                        src="../../public/assets/img/heatmap.jpg"
                         alt="Heat Map"
                         class="heatmap"
                     />
