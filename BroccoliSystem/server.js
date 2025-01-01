@@ -1,27 +1,25 @@
-import express from "express"; // Use 'import' instead of 'require'
+import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Create an Express server
 const app = express();
 
-// Determine __dirname equivalent in ES modules
+// Use the current directory in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Serve static files from the 'dist' directory
+// Static files served from 'dist' directory
 const staticPath = path.join(__dirname, "dist");
 app.use(express.static(staticPath));
 
-// Handle SPA routing (redirect all unmatched routes to index.html)
+// SPA routing: Redirect to index.html for any route
 app.get("*", (req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
 });
 
-// Set the port to use environment variable PORT or default to 8080
-const PORT = process.env.PORT || 5173;
+// Set the port to Azure's provided port or default to 80
+const PORT = process.env.PORT || 80;
 
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
