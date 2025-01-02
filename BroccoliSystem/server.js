@@ -18,7 +18,7 @@ app.get("*", (req, res) => {
 });
 
 // Set the port to Azure's provided port or default to 80
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 5173;
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
