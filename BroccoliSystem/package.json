@@ -6,7 +6,8 @@
     "scripts": {
         "start": "node server.js",
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "postinstall": "npm install --production"
     },
     "dependencies": {
         "express": "^4.21.2",
