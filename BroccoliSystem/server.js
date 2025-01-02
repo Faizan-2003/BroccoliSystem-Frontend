@@ -16,9 +16,10 @@ app.use(express.static(staticPath));
 app.get("*", (req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
 });
+app.use(express.static(path.join(__dirname, "public")));
 
 // Ensure your app uses the correct port
-const PORT = process.env.PORT || 8080; // Azure uses this port for HTTP traffic
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+    console.log(`App is running on port ${port}`);
 });
